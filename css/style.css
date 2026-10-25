@@ -1,0 +1,181 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: black;
+    line-height: 1.6;
+}
+
+.navbar {
+    background: black;
+    color: white;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    font-size: 25px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 22px;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #ffd166;
+}
+
+.hero {
+    background: #eaf3ff;
+    text-align: center;
+    padding: 90px 20px;
+}
+
+.hero h1 {
+    font-size: clamp(28px, 5vw, 42px);
+    margin-bottom: 15px;
+}
+
+.hero p {
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background:black;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: black;
+}
+
+.features {
+    padding: 55px 7%;
+    text-align: center;
+}
+
+.features h2 {
+    margin-bottom: 25px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.card {
+    padding: 25px;
+    border-radius: 10px;
+    background: #f4f6f8;
+    box-shadow: 0 2px 8px #00000012;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+footer {
+    background:bl;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        justify-content: center;
+        gap: 14px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding: 60px 18px;
+    }
+}
+
+.contact-section {
+    max-width: 650px;
+    margin: 40px auto;
+    padding: 30px 20px;
+}
+
+.contact-section h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#contactForm input,
+#contactForm textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font: inherit;
+}
+
+#contactForm input:focus,
+#contactForm textarea:focus {
+    outline: 2px solid chocolate;
+}
+
+#contactForm button {
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#formMessage {
+    margin-top: 10px;
+    text-align: center;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.container,
+.hero,
+main {
+    max-width: 100%;
+}
+
